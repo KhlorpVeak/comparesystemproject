@@ -69,7 +69,7 @@ export default function RegisterUser() {
                                 type="text"
                                 value={first_name}
                                 onChange={(e) => setFirstName(e.target.value)}
-                                className="w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all text-white placeholder-gray-600"
+                                className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all text-white placeholder-gray-600"
                                 placeholder="Your Name"
                                 required
                             />
@@ -80,7 +80,7 @@ export default function RegisterUser() {
                                 type="text"
                                 value={last_name}
                                 onChange={(e) => setLastName(e.target.value)}
-                                className="w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all text-white placeholder-gray-600"
+                                className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all text-white placeholder-gray-600"
                                 placeholder="Your Last Name"
                                 required
                             />
@@ -93,7 +93,7 @@ export default function RegisterUser() {
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-white placeholder-gray-600"
+                                className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-white placeholder-gray-600"
                                 placeholder="name@email.com"
                                 required
                             />
@@ -106,7 +106,7 @@ export default function RegisterUser() {
                             type="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className="w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all text-white placeholder-gray-600"
+                            className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all text-white placeholder-gray-600"
                             placeholder="••••••••"
                             required
                         />
@@ -118,7 +118,7 @@ export default function RegisterUser() {
                             type="password"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
-                            className="w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all text-white placeholder-gray-600"
+                            className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all text-white placeholder-gray-600"
                             placeholder="••••••••"
                             required
                         />
@@ -126,7 +126,7 @@ export default function RegisterUser() {
 
                     <button
                         type="submit"
-                        className="w-full py-4 px-6 bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-400 hover:to-blue-500 text-white font-bold rounded-2xl shadow-lg transform transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] focus:outline-none mt-4"
+                        className="w-full py-2 px-3 bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-400 hover:to-blue-500 text-white font-bold rounded-2xl shadow-lg transform transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] focus:outline-none mt-4"
                     >
                         Register
                     </button>
