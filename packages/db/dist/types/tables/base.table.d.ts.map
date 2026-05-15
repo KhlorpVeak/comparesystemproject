@@ -1,0 +1,1 @@
+{"version":3,"file":"base.table.d.ts","sourceRoot":"","sources":["../../../src/types/tables/base.table.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,QAAQ,CAAC;AAExC,MAAM,WAAW,SAAS;IACxB,EAAE,EAAE,SAAS,CAAC,MAAM,CAAC,CAAC;IACtB,UAAU,CAAC,EAAE,IAAI,CAAC;IAClB,UAAU,CAAC,EAAE,IAAI,CAAC;CACnB"}

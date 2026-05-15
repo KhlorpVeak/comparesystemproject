@@ -1,0 +1,1 @@
+{"version":3,"file":"user_session.table.d.ts","sourceRoot":"","sources":["../../../src/types/tables/user_session.table.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,iBAAiB,CAAC;AAE5C,MAAM,WAAW,gBAAiB,SAAQ,SAAS;IAC/C,MAAM,EAAE,MAAM,CAAC;IACf,KAAK,EAAE,MAAM,CAAC;IACd,UAAU,EAAE,IAAI,CAAC;CACpB"}

@@ -1,0 +1,44 @@
+import { useCalendarContext } from "../../calendar-context";
+import { startOfWeek, addDays } from "date-fns";
+import CalendarBodyMarginDayMargin from "../day/calendar-body-margin-day-margin";
+import CalendarBodyDayContent from "../day/calendar-body-day-content";
+import { forwardRef, type RefObject } from "react";
+import CalendarOrganizers from "../../calendar-organizers";
+
+const CalendarBodyWeek = forwardRef<HTMLDivElement>((_, ref) => {
+  const { date } = useCalendarContext();
+
+  const weekStart = startOfWeek(date, { weekStartsOn: 1 });
+  const weekDays = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i));
+
+  return (
+    <div className="flex divide-x h-full">
+      <div className="lg:flex hidden flex-col flex-1 divide-y max-w-[200px]">
+        <CalendarOrganizers />
+      </div>
+      <div className="flex flex-col flex-1 divide-y">
+        <div className="flex flex-col flex-1 overflow-y-auto" ref={ref}>
+          <div className="relative flex flex-1 divide-x flex-col md:flex-row">
+            <CalendarBodyMarginDayMargin className="hidden md:block" />
+            {weekDays.map((day) => (
+              <div
+                key={day.toISOString()}
+                className="flex flex-1 divide-x md:divide-x-0"
+              >
+                <CalendarBodyMarginDayMargin className="block md:hidden" />
+                <CalendarBodyDayContent
+                  date={day}
+                  scrollContainerRef={ref as RefObject<HTMLDivElement>}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+});
+
+CalendarBodyWeek.displayName = "CalendarBodyWeek";
+
+export default CalendarBodyWeek;

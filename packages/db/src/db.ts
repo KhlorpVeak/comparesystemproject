@@ -1,0 +1,22 @@
+import type { Database } from './types/database.js';
+import { createPool } from "mysql2";
+import { Kysely, MysqlDialect } from 'kysely';
+import 'dotenv/config';
+
+const dialect = new MysqlDialect({
+  // @ts-ignore
+  pool: createPool({
+    database: process.env.DATABASE_NAME,
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD || '',
+    port: process.env.DATABASE_PORT ? parseInt(process.env.DATABASE_PORT) : 3306,
+  }),
+});
+
+export type DatabaseType = Kysely<Database>;
+
+export const db = new Kysely<Database>({
+  dialect,
+  log: ['query', 'error'],
+});

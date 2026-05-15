@@ -1,0 +1,1 @@
+{"version":3,"file":"user.table.d.ts","sourceRoot":"","sources":["../../../src/types/tables/user.table.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAc,MAAM,QAAQ,CAAC;AAE/C,MAAM,WAAW,SAAS;IACtB,EAAE,EAAE,SAAS,CAAC,MAAM,CAAC,CAAC;IACtB,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,CAAC,EAAE,MAAM,CAAC;IAClB,UAAU,EAAE,MAAM,CAAC;IACnB,UAAU,EAAE,IAAI,CAAC;IACjB,UAAU,EAAE,IAAI,CAAC;CACpB"}

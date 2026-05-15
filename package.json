@@ -1,0 +1,22 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "web": "pnpm --filter my-project dev",
+    "api": "pnpm --filter my-server api",
+    "api:build": "pnpm --filter my-server build",
+    "web:build": "pnpm --filter my-project build"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.1",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "kysely": "0.28.16"
+    }
+  }
+}

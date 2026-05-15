@@ -1,0 +1,20 @@
+{
+  "name": "@comparesystem/shared",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts"
+  },
+  "devDependencies": {
+    "@comparesystem/eslint-config": "workspace:*",
+    "@comparesystem/typescript-config": "workspace:*",
+    "@types/node": "^22.13.10"
+  },
+  "dependencies": {
+    "kysely": "^0.28.14",
+    "zod": "^4.3.6",
+    "@hono/zod-openapi": "^1.2.3"
+  }
+}

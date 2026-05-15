@@ -1,0 +1,42 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx app.ts",
+    "dev": "tsx watch app.ts",
+    "api": "tsx watch src/node.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@comparesystem/db": "workspace:*",
+    "@comparesystem/error": "workspace:*",
+    "@comparesystem/shared": "workspace:^",
+    "@hono/node-server": "^1.19.11",
+    "@hono/swagger-ui": "^0.6.1",
+    "@hono/zod-openapi": "^1.2.3",
+    "@types/node": "^25.5.0",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "hono": "^4.12.8",
+    "kysely": "^0.28.14",
+    "libphonenumber-js": "^1.12.7",
+    "mysql2": "^3.20.0",
+    "request": "^2.88.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6"
+  }
+}

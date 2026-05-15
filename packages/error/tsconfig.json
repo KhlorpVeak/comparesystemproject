@@ -1,0 +1,17 @@
+{
+  "extends": "@comparesystem/typescript-config/base.json",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "declaration": true,
+    "target": "ESNext"
+  }
+}

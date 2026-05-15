@@ -1,0 +1,18 @@
+{
+  "extends": "@comparesystem/typescript-config/base.json",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@comparesystem/ui/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
